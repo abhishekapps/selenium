@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7832" started-at="2021-06-01T22:17:18 IST" finished-at="2021-06-01T22:17:26 IST">
+  <suite name="Default suite" duration-ms="7106" started-at="2021-06-02T13:07:01 IST" finished-at="2021-06-02T13:07:08 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.RunnerTest@42d8062c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.RunnerTest@10dba097]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="7832" started-at="2021-06-01T22:17:18 IST" finished-at="2021-06-01T22:17:26 IST">
+    <test name="Default test" duration-ms="7106" started-at="2021-06-02T13:07:01 IST" finished-at="2021-06-02T13:07:08 IST">
       <class name="cucumber.RunnerTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.RunnerTest@42d8062c]" name="setUpClass" is-config="true" duration-ms="203" started-at="2021-06-01T22:17:18 IST" finished-at="2021-06-01T22:17:18 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.RunnerTest@10dba097]" name="setUpClass" is-config="true" duration-ms="300" started-at="2021-06-02T13:07:01 IST" finished-at="2021-06-02T13:07:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.RunnerTest@42d8062c]" name="runScenario" duration-ms="7587" started-at="2021-06-01T22:17:18 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-01T22:17:26 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.RunnerTest@10dba097]" name="runScenario" duration-ms="6753" started-at="2021-06-02T13:07:01 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-02T13:07:08 IST">
           <params>
             <param index="0">
               <value>
@@ -27,10 +27,51 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'LAPTOP-OIA9MJK8', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\singh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ec4cc863f8084056c91f2ee4e7d42eb7
+*** Element info: {Using=id, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'LAPTOP-OIA9MJK8', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\singh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ec4cc863f8084056c91f2ee4e7d42eb7
+*** Element info: {Using=id, value=username}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at cucumber.ActiTimeLoginTest.user_enter_the_correct_and(ActiTimeLoginTest.java:45)
+at ✽.User enter the correct "username" and "password"(file:///C:/Abhishek/cucumber/src/test/java/cucumber/lol.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.RunnerTest@42d8062c]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2021-06-01T22:17:26 IST" finished-at="2021-06-01T22:17:26 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.RunnerTest@10dba097]" name="tearDownClass" is-config="true" duration-ms="11" started-at="2021-06-02T13:07:08 IST" finished-at="2021-06-02T13:07:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
