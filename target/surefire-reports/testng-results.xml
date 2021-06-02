@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="8290" started-at="2021-06-01T22:28:49 IST" finished-at="2021-06-01T22:28:57 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.RunnerTest@3043fe0e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Command line test" duration-ms="8290" started-at="2021-06-01T22:28:49 IST" finished-at="2021-06-01T22:28:57 IST">
+      <class name="cucumber.RunnerTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumber.RunnerTest@3043fe0e]" name="setUpClass" is-config="true" duration-ms="234" started-at="2021-06-01T22:28:49 IST" finished-at="2021-06-01T22:28:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.RunnerTest@3043fe0e]" name="runScenario" duration-ms="8027" started-at="2021-06-01T22:28:49 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-01T22:28:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the login feature"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[ActiTime Login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.RunnerTest@3043fe0e]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2021-06-01T22:28:57 IST" finished-at="2021-06-01T22:28:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.RunnerTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
