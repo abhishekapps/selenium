@@ -45,8 +45,8 @@ public class ActiTimeLoginTest {
 		WebElement usName  = driver.findElement(By.id("username"));
 		WebElement paas = driver.findElement(By.name("pwd"));
 		
-		usName.sendKeys("username");
-		paas.sendKeys("password");
+		usName.sendKeys(username);
+		paas.sendKeys(password);
 	}
 
 	@And("User click on the login button")
@@ -56,7 +56,7 @@ public class ActiTimeLoginTest {
 	  
 	}
 
-	@Then("Login successful message should be displayed")
+	@Then("Login successful message should be display")
 	public void login_successful_message_should_be_displayed() {
 		
 		String title= driver.getTitle();
